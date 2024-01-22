@@ -1,0 +1,1414 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: sans-serif;
+}
+::-webkit-scrollbar {
+  width: 0px;
+}
+::-webkit-scrollbar-track {
+  border-radius: 1px;
+}
+
+  
+::-webkit-scrollbar-thumb {
+  background: #000dff00; 
+  border-radius: 19px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a6a7b300; 
+}
+:root{
+  --primary-color:#0a15e0 ;
+  --secondary-color: white ;
+  
+}
+.dark-theme{
+  --primary-color: black ;
+  --secondary-color: gray ;
+  filter: grayscale(1);
+}
+
+
+body {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  position: relative;
+}
+
+.navbar {
+  justify-content: space-between;
+  display: flex;
+  padding: 20px 50px 20px 50px;
+  color: var(--secondary-color);
+  position: sticky;
+  top: 0;
+  background-color: var(--primary-color);
+}
+.logo {
+  letter-spacing: 2px;
+  font-family: "Alfa Slab One", serif;
+}
+.logo h3 {
+  font-weight: 100;
+  letter-spacing: 2px;
+  font-family: "Alfa Slab One", serif;
+}
+.nav a {
+  color: var(--secondary-color);
+  padding-left: 20px;
+  font-size: large;
+  text-decoration: none;
+  cursor: pointer;
+}
+.nav a:hover {
+  text-decoration: rgb(3, 3, 224) line-through;
+  color: var(--secondary-color);
+}
+#modes{
+  height: 20px;
+  width: auto;
+  cursor: pointer;
+  vertical-align: middle;
+  margin-left: 10px;
+  color: var(--secondary-color);
+}
+.nav img{
+  height: 20px;
+  width: auto;
+  cursor: pointer;
+  vertical-align: middle;
+  margin-left: 10px;
+  color: var(--secondary-color);
+}
+.hamburger {
+  display: none;
+}
+.hero {
+  padding: 20px 50px;
+  text-align: center;
+  margin: 50px 230px;
+  padding: 0px 60px;
+}
+.hero h1 {
+  font-size: 50px;
+  letter-spacing: 2px;
+  font-family: "Alfa Slab One", serif;
+}
+
+.icons{
+  display: inline;
+  position: fixed;
+  right: 2%;
+  top: 20%;
+}
+.icons ul{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.icons li::after{
+  content: "<";
+  color: var(--secondary-color);
+  font-size: 10px;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+.icons li{
+  list-style: none;
+}
+.icons i{
+  cursor: pointer;
+}
+
+
+
+
+
+.herovideo {
+  margin: 70px 30px;
+
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 100px 0px;
+  gap: 30px;
+}
+.card {
+  height: 100%;
+  width: 200px;
+
+  text-align: center;
+  padding: 30px;
+}
+.card h3 {
+  font-family: "Alfa Slab One", serif;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+.middle {
+  padding: 20px 50px;
+  text-align: center;
+  margin: 100px 230px;
+  padding: 0px 60px;
+}
+.middle h1 {
+  font-size: 50px;
+  letter-spacing: 2px;
+  font-family: "Alfa Slab One", serif;
+}
+
+.second {
+  padding: 20px 50px;
+  text-align: center;
+  margin: 100px 230px;
+  padding: 0px 60px;
+}
+
+.second h1 {
+  font-size: 50px;
+  letter-spacing: 2px;
+  font-family: "Alfa Slab One", serif;
+}
+.secondvideo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.videocard {
+  height: 100%;
+  width: 33%;
+  white-space: nowrap;
+
+}
+.third {
+  padding: 20px 50px;
+  text-align: center;
+  margin: 100px 230px;
+  padding: 0px 60px;
+}
+.third h1 {
+  font-size: 50px;
+  letter-spacing: 2px;
+  font-family: "Alfa Slab One", serif;
+  margin-bottom: 20px;
+}
+.fourth {
+  padding: 20px 50px;
+  text-align: center;
+  margin: 100px 230px;
+  padding: 0px 60px;
+}
+.fourth h1 {
+  font-size: 50px;
+  letter-spacing: 2px;
+  font-family: "Alfa Slab One", serif;
+  margin-bottom: 20px;
+}
+footer {
+  margin: 20px 0px;
+  text-align: center;
+}
+footer p {
+  font-size: small;
+}
+.talkimage {
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  right: 0;
+}
+.talkimage img {
+  height: 250px;
+  width: auto;
+}
+.feedbackimage {
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  left: 1;
+  margin-left: 1%;
+  margin-bottom: 1%;
+}
+.feedbackimage svg {
+  color: #fff;
+  height: 50px;
+  width: auto;
+}
+
+/* ---------------------------touch data ------------------------------ */
+/* form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+.touch {
+  margin: 0% 20%;
+  padding-top: 2%;
+}
+
+.touch h1 {
+  font-size: 50px;
+  letter-spacing: 2px;
+  font-family: "Alfa Slab One", serif;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.touch p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.touchdata {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.touchdata input {
+  height: 30px;
+  width: 500px;
+  padding: 20px;
+  margin: 10px;
+  border: 0.5px solid white;
+  background-color: var(--primary-color);
+
+  border-radius: 8px;
+  color: var(--secondary-color);
+}
+.touchdata input:hover {
+  background-color: transparent;
+}
+.touchdata textarea {
+  height: 70px;
+  width: 500px;
+  padding: 20px;
+  margin: 10px;
+  border: 0.5px solid white;
+  background-color: var(--primary-color);
+  border-radius: 8px;
+  color: var(--secondary-color);
+}
+.touchdata textarea:hover {
+  background-color: transparent;
+}
+.touchdata button {
+  padding: 20px 200px;
+  margin: 10px;
+  text-align: center;
+  letter-spacing: 2px;
+  font-family: "Alfa Slab One", serif;
+  color: var(--secondary-color);
+  border: 0.5px solid white;
+  background-color: rgb(7, 7, 130);
+  border-radius: 8px;
+  cursor: pointer;
+}
+.touchdata button:hover {
+  background-color: rgb(16, 16, 163);
+}
+::placeholder {
+  color: var(--secondary-color);
+  font-size: 12px;
+  opacity: 0.8;
+}
+/* -------------about page----------------------- */
+
+.aboutpage {
+  padding: 20px 50px;
+  text-align: center;
+  margin: 100px 230px;
+  padding: 0px 60px;
+  height: 100vh;
+}
+.aboutpage h1 {
+  font-size: 50px;
+  letter-spacing: 2px;
+  font-family: "Alfa Slab One", serif;
+  margin-bottom: 20px;
+}
+footer {
+  margin: 20px 0px;
+  text-align: center;
+}
+footer p {
+  font-size: small;
+}
+
+/* ------------approach ------------------ */
+
+.approachmain {
+  margin: 80px 80px;
+}
+.approachmain h1 {
+  font-size: 50px;
+  letter-spacing: 2px;
+  font-family: "Alfa Slab One", serif;
+  margin-bottom: 20px;
+  text-align: start;
+}
+.approachmain p {
+  text-align: start;
+  margin-bottom: 20px;
+  margin-right: 40%;
+}
+.approachscnd {
+  margin: 80px 80px;
+}
+.approachscnd h1 {
+  font-size: 50px;
+  letter-spacing: 2px;
+  font-family: "Alfa Slab One", serif;
+  margin-bottom: 20px;
+  text-align: start;
+}
+.approachscnd p {
+  text-align: start;
+  margin-bottom: 20px;
+  margin-right: 40%;
+}
+.approachscndtwo {
+  margin: 80px 80px;
+}
+.approachscndtwo h1 {
+  font-size: 50px;
+  letter-spacing: 2px;
+  font-family: "Alfa Slab One", serif;
+  margin-bottom: 20px;
+  text-align: start;
+}
+.approachscndtwo p {
+  text-align: start;
+  margin-bottom: 20px;
+  margin-right: 40%;
+}
+
+.approachscndthree {
+  margin: 80px 80px;
+}
+.approachscndthree h1 {
+  font-size: 50px;
+  letter-spacing: 2px;
+  font-family: "Alfa Slab One", serif;
+  margin-bottom: 20px;
+  text-align: start;
+}
+.approachscndthree p {
+  text-align: start;
+  margin-bottom: 20px;
+  margin-right: 40%;
+}
+/* --------------------work--------------------- */
+.workimage {
+  margin: 0% 25%;
+}
+.workimage img {
+  object-fit: cover;
+  object-position: 50% 50%;
+  width: 100%;
+}
+.workcon {
+  margin: 132px 670px 110px 100px;
+}
+.workcon h1 {
+  font-size: 50px;
+  letter-spacing: 2px;
+  font-family: "Alfa Slab One", serif;
+  margin-bottom: 20px;
+  text-align: start;
+}
+.workcon span {
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-family: "Alfa Slab One", serif;
+  text-align: start;
+}
+.workpara {
+  margin-right: 70px;
+}
+.videocon {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+picture img {
+  object-fit: cover;
+  object-position: 50% 50%;
+  width: 100%;
+  z-index: 1;
+  overflow: hidden;
+}
+.gridimg {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.gridimg img {
+  height: 100%;
+  width: 100%;
+}
+
+/* -----------------feedback----------------------- */
+
+.panel-container {
+  background-color: #12192c;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
+  font-size: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+  max-width: 400px;
+  color: var(--secondary-color);
+  margin: 10% auto 2% auto;
+}
+
+.panel-container strong {
+  line-height: 20px;
+}
+
+.ratings-container {
+  display: flex;
+  margin: 20px 0;
+}
+
+.rating {
+  flex: 1;
+  cursor: pointer;
+  padding: 20px;
+  margin: 10px 5px;
+}
+
+.rating:hover,
+.rating.active {
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(255, 254, 254, 0.388);
+}
+
+.rating i {
+  width: 40px;
+}
+
+.rating small {
+  color: #fff;
+  display: inline-block;
+  margin: 10px 0 0;
+}
+
+.rating:hover small,
+.rating.active small {
+  color: #8f94fb;
+}
+.feedbackmsg {
+  height: 80px;
+  width: 100%;
+}
+.feedbackmsg textarea {
+  background-color: #12192c;
+  border: none;
+  height: 30px;
+  width: 200px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  color: var(--secondary-color);
+}
+
+.btn {
+  background-color: #8f94fb;
+  color: #000;
+  border: 0;
+  border-radius: 4px;
+  padding: 12px 30px;
+  cursor: pointer;
+}
+
+.btn:focus {
+  outline: 0;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+.btn:hover {
+  color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(255, 254, 254, 0.388);
+}
+
+.credit a {
+  text-decoration: none;
+  color: #fff;
+}
+.credit h1 {
+  font-size: small;
+}
+
+.credit {
+  text-align: center;
+}
+
+
+
+.tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: var(--secondary-color);
+  color: #0a15e0;
+  border: 1px solid #0a15e0;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  margin-left: 5px;
+  
+ font-size: small;
+  position: absolute;
+  z-index: 1;
+}
+
+.feedbackimage:hover .tooltiptext {
+  visibility: visible;
+}
+
+
+
+.marquee{
+  display: flex;
+  justify-content: center;
+  align-items: center ;
+  width:100vw;
+  height: 10vh;
+  color: black;
+  overflow: hidden;
+  z-index: 0;
+}
+.marqueecon{
+  list-style: none;
+  display: flex;
+  height: 100%;
+  animation: scrolling 40s linear infinite ;
+  gap: 30px;
+  z-index: 0;
+}
+@keyframes scrolling {
+  0%{transform: translateX(0);}
+  100%{
+    transform: translateX(-100vw);
+  }
+}
+.marqueecon img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  width: auto;
+  flex-shrink: 0;
+  font-size: 5rem;
+  white-space: nowrap;
+}
+.marqueecon video{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  width: auto;
+  flex-shrink: 0;
+  font-size: 5rem;
+  white-space: nowrap;
+}
+
+@media (max-width:769px) {
+  .nav a{
+    display: none;
+  }
+  .hero{
+    padding: 20px 50px;
+  text-align: center;
+  margin: 50px 80px;
+  padding: 0px 60px;
+  }
+  .hero h1 {
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-family: "Alfa Slab One", serif;
+  }
+  .hero p{
+    font-size: 10px;
+  }
+  .middle{
+    padding: 20px 50px;
+  text-align: center;
+  margin: 50px 80px;
+  padding: 0px 60px;
+  }
+  .middle h1 {
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-family: "Alfa Slab One", serif;
+  }
+  
+  .middle p{
+    font-size: 15px;
+  }
+  .second{
+    padding: 20px 50px;
+  text-align: center;
+  margin: 50px 80px;
+  padding: 0px 60px;
+  }
+  .second h1 {
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-family: "Alfa Slab One", serif;
+    
+  }
+  .second p{
+    font-size: 15px;
+  }
+  .third{
+    padding: 20px 50px;
+  text-align: center;
+  margin: 50px 80px;
+  padding: 0px 60px;
+  }
+  .third h1 {
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-family: "Alfa Slab One", serif;
+  }
+  .third p{
+    font-size: 15px;
+  }
+  .fourth{
+    padding: 20px 50px;
+  text-align: center;
+  margin: 50px 80px;
+  padding: 0px 60px;
+  }
+  .fourth h1 {
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-family: "Alfa Slab One", serif;
+  }
+  .fourth p{
+    font-size: 15px;
+  }
+  footer {
+    margin: 20px 0px;
+    text-align: center;
+  }
+  footer p {
+    font-size: 10px;
+  }
+  
+.talkimage img {
+  height: 70px;
+  width: auto;
+}
+.feedbackimage {
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  left: 1;
+  margin-left: 1%;
+  margin-bottom: 1%;
+}
+.feedbackimage svg {
+  color: #fff;
+  height: 10px;
+  width: auto;
+}
+
+}
+
+
+
+@media (max-width:590px) {
+  .nav a{
+    display: none;
+  }
+  .hero{
+    padding: 20px 50px;
+  text-align: center;
+  margin: 50px 80px;
+  padding: 0px 60px;
+  }
+  .hero h1 {
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-family: "Alfa Slab One", serif;
+  }
+  .hero p{
+    font-size: 10px;
+  }
+  .middle{
+    padding: 20px 50px;
+  text-align: center;
+  margin: 50px 80px;
+  padding: 0px 60px;
+  }
+  .middle h1 {
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-family: "Alfa Slab One", serif;
+  }
+  
+  .middle p{
+    font-size: 15px;
+  }
+  .second{
+    padding: 20px 50px;
+  text-align: center;
+  margin: 50px 80px;
+  padding: 0px 60px;
+  }
+  .second h1 {
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-family: "Alfa Slab One", serif;
+    
+  }
+  .second p{
+    font-size: 15px;
+  }
+  .third{
+    padding: 20px 50px;
+  text-align: center;
+  margin: 50px 80px;
+  padding: 0px 60px;
+  }
+  .third h1 {
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-family: "Alfa Slab One", serif;
+  }
+  .third p{
+    font-size: 15px;
+  }
+  .fourth{
+    padding: 20px 50px;
+  text-align: center;
+  margin: 50px 80px;
+  padding: 0px 60px;
+  }
+  .fourth h1 {
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-family: "Alfa Slab One", serif;
+  }
+  .fourth p{
+    font-size: 15px;
+  }
+  footer {
+    margin: 20px 0px;
+    text-align: center;
+  }
+  footer p {
+    font-size: 10px;
+  }
+  
+.talkimage img {
+  height: 70px;
+  width: auto;
+}
+.feedbackimage {
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  left: 1;
+  margin-left: 1%;
+  margin-bottom: 1%;
+}
+.feedbackimage svg {
+  color: #fff;
+  height: 10px;
+  width: auto;
+}
+
+}
+
+
+@media (max-width:426px) {
+  .nav a{
+    display: none;
+  }
+  .hero{
+    padding: 20px 50px;
+  text-align: center;
+  margin: 20px 10px;
+  padding: 0px 60px;
+  }
+  .hero h1 {
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family: "Alfa Slab One", serif;
+  }
+  .hero p{
+    font-size: 10px;
+  }
+  .middle{
+    padding: 20px 50px;
+  text-align: center;
+  margin: 20px 10px;
+  padding: 0px 60px;
+  }
+  .middle h1 {
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family: "Alfa Slab One", serif;
+  }
+  
+  .middle p{
+    font-size: 15px;
+  }
+  .second{
+    padding: 20px 50px;
+  text-align: center;
+  margin: 20px 10px;
+  padding: 0px 60px;
+  }
+  .second h1 {
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family: "Alfa Slab One", serif;
+    
+  }
+  .second p{
+    font-size: 15px;
+  }
+  .third{
+    padding: 20px 50px;
+  text-align: center;
+  margin: 20px 10px;
+  padding: 0px 60px;
+  }
+  .third h1 {
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family: "Alfa Slab One", serif;
+  }
+  .third p{
+    font-size: 15px;
+  }
+  .fourth{
+    padding: 20px 50px;
+  text-align: center;
+  margin: 20px 10px;
+  padding: 0px 60px;
+  }
+  .fourth h1 {
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family: "Alfa Slab One", serif;
+  }
+  .fourth p{
+    font-size: 15px;
+  }
+  footer {
+    margin: 20px 0px;
+    text-align: center;
+  }
+  footer p {
+    font-size: 10px;
+  }
+  
+.talkimage img {
+  height: 70px;
+  width: auto;
+}
+.feedbackimage {
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  left: 1;
+  margin-left: 1%;
+  margin-bottom: 1%;
+}
+.feedbackimage svg {
+  color: #fff;
+  height: 10px;
+  width: auto;
+}
+
+}
+
+
+
+@media (max-width:426px) {
+  .nav a{
+    display: none;
+  }
+  .hero{
+    padding: 20px 50px;
+  text-align: center;
+  margin: 60px 10px;
+  padding: 0px 30px;
+  }
+  .hero h1 {
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family: "Alfa Slab One", serif;
+  }
+  .hero p{
+    font-size: 10px;
+  }
+  .middle{
+    padding: 20px 50px;
+  text-align: center;
+  margin: 20px 10px;
+  padding: 0px 60px;
+  }
+  .middle h1 {
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family: "Alfa Slab One", serif;
+  }
+  
+  .middle p{
+    font-size: 15px;
+  }
+  .second{
+    padding: 20px 50px;
+  text-align: center;
+  margin: 20px 10px;
+  padding: 0px 60px;
+  }
+  .second h1 {
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family: "Alfa Slab One", serif;
+    
+  }
+  .second p{
+    font-size: 15px;
+  }
+  .third{
+    padding: 20px 50px;
+  text-align: center;
+  margin: 20px 10px;
+  padding: 0px 60px;
+  }
+  .third h1 {
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family: "Alfa Slab One", serif;
+  }
+  .third p{
+    font-size: 15px;
+  }
+  .fourth{
+    padding: 20px 50px;
+  text-align: center;
+  margin: 20px 10px;
+  padding: 0px 60px;
+  }
+  .fourth h1 {
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family: "Alfa Slab One", serif;
+  }
+  .fourth p{
+    font-size: 15px;
+  }
+  footer {
+    margin: 20px 0px;
+    text-align: center;
+  }
+  footer p {
+    font-size: 10px;
+  }
+  
+.talkimage img {
+  height: 70px;
+  width: auto;
+}
+.feedbackimage {
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  left: 1;
+  margin-left: 1%;
+  margin-bottom: 1%;
+}
+.feedbackimage svg {
+  color: #fff;
+  height: 10px;
+  width: auto;
+}
+
+}
+/* 
+
+@media (max-width:2561px) {
+
+  
+.hero {
+  padding: 20px 50px;
+  text-align: center;
+  margin: 7% 20%;
+  padding: 0px 60px;
+}
+.hero h1 {
+  font-size: 90px;
+  letter-spacing: 2px;
+  font-family: "Alfa Slab One", serif;
+}
+
+.icons{
+  display: inline;
+  position: fixed;
+  right: 2%;
+  top: 20%;
+}
+.icons ul{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.icons li::after{
+  content: "<";
+  color: var(--secondary-color);
+  font-size: 10px;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+.icons li{
+  list-style: none;
+}
+.icons i{
+  cursor: pointer;
+  font-size: 20px;
+}
+
+
+
+
+
+.herovideo {
+  margin: 70px 30px;
+
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 100px 0px;
+  gap: 30px;
+}
+.card {
+  height: 100%;
+  width: 400px;
+  text-align: center;
+  padding: 30px;
+}
+.card h3 {
+  font-family: "Alfa Slab One", serif;
+  letter-spacing: 2px;
+  font-weight: 100;
+  font-size: 40px;
+}
+.card p{
+  font-size: 25px;
+}
+.middle {
+  padding: 20px 50px;
+  text-align: center;
+  margin: 7% 20%;
+  padding: 0px 60px;
+}
+.middle h1 {
+  font-size: 90px;
+  letter-spacing: 2px;
+  font-family: "Alfa Slab One", serif;
+}
+.middle p{
+  font-size: 35px;
+}
+.second {
+  padding: 20px 50px;
+  text-align: center;
+  margin: 7% 20%;
+  padding: 0px 60px;
+}
+.second h1 {
+  font-size: 90px;
+  letter-spacing: 2px;
+  font-family: "Alfa Slab One", serif;
+}
+.second p{
+  font-size: 35px;
+}
+.secondvideo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.videocard {
+  height: 100%;
+  width: 33%;
+  white-space: nowrap;
+
+}.third {
+  padding: 20px 50px;
+  text-align: center;
+  margin: 7% 20%;
+  padding: 0px 60px;
+}
+.third h1 {
+  font-size: 90px;
+  letter-spacing: 2px;
+  font-family: "Alfa Slab One", serif;
+}
+.third p{
+  font-size: 35px;
+}
+.fourth {
+  padding: 20px 50px;
+  text-align: center;
+  margin: 7% 20%;
+  padding: 0px 60px;
+}
+.fourth h1 {
+  font-size: 90px;
+  letter-spacing: 2px;
+  font-family: "Alfa Slab One", serif;
+}
+.fourth p{
+  font-size: 35px;
+}
+footer {
+  margin: 20px 40px;
+  text-align: center;
+}
+footer p {
+  font-size: large;
+}
+.talkimage {
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  right: 0;
+}
+.talkimage img {
+  height: 350px;
+  width: auto;
+}
+.feedbackimage {
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  left: 1;
+  margin-left: 1%;
+  margin-bottom: 1%;
+}
+.feedbackimage svg {
+  color: #fff;
+  height: 70px;
+  width: auto;
+}
+}
+
+
+
+@media (max-width:1025px) {
+  
+.nav a {
+  color: var(--secondary-color);
+  padding-left: 20px;
+  font-size: large;
+  text-decoration: none;
+  cursor: pointer;
+}
+.nav a:hover {
+  text-decoration: rgb(3, 3, 224) line-through;
+  color: var(--secondary-color);
+}
+#modes{
+  height: 20px;
+  width: auto;
+  cursor: pointer;
+  vertical-align: middle;
+  margin-left: 10px;
+  color: var(--secondary-color);
+}
+.nav img{
+  height: 20px;
+  width: auto;
+  cursor: pointer;
+  vertical-align: middle;
+  margin-left: 10px;
+  color: var(--secondary-color);
+}
+.hamburger {
+  display: none;
+}
+.hero {
+  padding: 20px 50px;
+  text-align: center;
+  margin: 50px 230px;
+  padding: 0px 60px;
+}
+.hero h1 {
+  font-size: 50px;
+  letter-spacing: 2px;
+  font-family: "Alfa Slab One", serif;
+}
+
+.icons{
+  display: inline;
+  position: fixed;
+  right: 2%;
+  top: 20%;
+}
+.icons ul{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.icons li::after{
+  content: "<";
+  color: var(--secondary-color);
+  font-size: 10px;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+.icons li{
+  list-style: none;
+}
+.icons i{
+  cursor: pointer;
+}
+
+
+
+
+
+.herovideo {
+  margin: 70px 30px;
+
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 100px 0px;
+  gap: 30px;
+}
+.card {
+  height: 100%;
+  width: 200px;
+
+  text-align: center;
+  padding: 30px;
+}
+.card h3 {
+  font-family: "Alfa Slab One", serif;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+.middle {
+  padding: 20px 50px;
+  text-align: center;
+  margin: 100px 230px;
+  padding: 0px 60px;
+}
+.middle h1 {
+  font-size: 50px;
+  letter-spacing: 2px;
+  font-family: "Alfa Slab One", serif;
+}
+
+.second {
+  padding: 20px 50px;
+  text-align: center;
+  margin: 100px 230px;
+  padding: 0px 60px;
+}
+
+.second h1 {
+  font-size: 50px;
+  letter-spacing: 2px;
+  font-family: "Alfa Slab One", serif;
+}
+.secondvideo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.videocard {
+  height: 100%;
+  width: 33%;
+  white-space: nowrap;
+
+}
+.third {
+  padding: 20px 50px;
+  text-align: center;
+  margin: 100px 230px;
+  padding: 0px 60px;
+}
+.third h1 {
+  font-size: 50px;
+  letter-spacing: 2px;
+  font-family: "Alfa Slab One", serif;
+  margin-bottom: 20px;
+}
+.fourth {
+  padding: 20px 50px;
+  text-align: center;
+  margin: 100px 230px;
+  padding: 0px 60px;
+}
+.fourth h1 {
+  font-size: 50px;
+  letter-spacing: 2px;
+  font-family: "Alfa Slab One", serif;
+  margin-bottom: 20px;
+}
+footer {
+  margin: 20px 0px;
+  text-align: center;
+}
+footer p {
+  font-size: small;
+}
+.talkimage {
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  right: 0;
+}
+.talkimage img {
+  height: 250px;
+  width: auto;
+}
+.feedbackimage {
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  left: 1;
+  margin-left: 1%;
+  margin-bottom: 1%;
+}
+.feedbackimage svg {
+  color: #fff;
+  height: 50px;
+  width: auto;
+}
+
+} */
